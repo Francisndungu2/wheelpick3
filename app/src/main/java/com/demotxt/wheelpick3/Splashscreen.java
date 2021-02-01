@@ -39,7 +39,26 @@ public class Splashscreen extends Activity {
         iv.clearAnimation();
         iv.startAnimation(anim);
 
-
+        splashTread = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    int waited = 0;
+                    // Splash screen pause time
+                    while (waited < 6000) {
+                        sleep(40);
+                        waited += 100;
+                    }
+                    Intent intent = new Intent(Splashscreen.this,
+                            MainActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    startActivity(intent);
+                    Splashscreen.this.finish();
+                } catch (InterruptedException e) {
+                    // do nothing
+                } finally {
+                    Splashscreen.this.finish();
+                }
 
             }
         };
