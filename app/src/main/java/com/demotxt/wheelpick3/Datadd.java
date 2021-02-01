@@ -1,4 +1,4 @@
-package com.demotxt.wheelpick2;
+package com.demotxt.wheelpick3;
 
 
 import android.os.Bundle;
@@ -13,15 +13,17 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.google.firebase.database.FirebaseDatabase.*;
 
 
 public class Datadd extends AppCompatActivity {
@@ -48,7 +50,7 @@ public class Datadd extends AppCompatActivity {
         setContentView(R.layout.activity_datadd);
 
 
-        databaseVehicles = FirebaseDatabase.getInstance().getReference("vehicles");
+        databaseVehicles = getInstance().getReference("vehicles");
 
 
         editTextName = (EditText) findViewById(R.id.editTextName);

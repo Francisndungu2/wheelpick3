@@ -1,4 +1,4 @@
-package com.demotxt.myapp.wheelpick3;
+package com.demotxt.wheelpick3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class DashboardActivity extends AppCompatActivity {
