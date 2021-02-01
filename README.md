@@ -15,6 +15,7 @@ Then navigate to the list of cars.
 ## Technologies Used
 Java
 Android
+firebase
 
 ## Link
 https://github.com/Francisndungu2/wheelpick3
