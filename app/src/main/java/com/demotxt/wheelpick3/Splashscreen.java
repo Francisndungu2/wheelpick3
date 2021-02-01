@@ -26,6 +26,18 @@ public class Splashscreen extends Activity {
         setContentView(R.layout.activity_splashscreen);
         StartAnimations();
     }
+    private void StartAnimations() {
+        Animation anim = AnimationUtils.loadAnimation(this, R.anim.alpha);
+        anim.reset();
+        LinearLayout l=(LinearLayout) findViewById(R.id.lin_lay);
+        l.clearAnimation();
+        l.startAnimation(anim);
+
+        anim = AnimationUtils.loadAnimation(this, R.anim.translate);
+        anim.reset();
+        ImageView iv = (ImageView) findViewById(R.id.splash);
+        iv.clearAnimation();
+        iv.startAnimation(anim);
 
 
 
