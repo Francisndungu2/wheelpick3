@@ -1,4 +1,4 @@
-# Wheelpick2
+# Wheelpick3
 ## Author
 Francis mbugua
 ## Description
@@ -17,7 +17,7 @@ Java
 Android
 
 ## Link
-https://github.com/Francisndungu2/wheelpick2
+https://github.com/Francisndungu2/wheelpick3
 ## Bugs
 No known bug.
 ## Contact Information
